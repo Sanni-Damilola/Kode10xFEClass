@@ -1,0 +1,142 @@
+CSS Basics
+CSS (Cascading Style Sheets) is used to style HTML elements. It allows you to control things like colors, fonts, layout, and spacing. There are three main ways to apply CSS to an HTML document: inline, internal, and external styles.
+
+1: Inline Styles
+Definition:
+Inline styles are written directly inside the HTML element using the style attribute. They are useful when you need to apply specific styles to a single element without affecting other elements.
+
+Syntax Example:
+<p style="color: red; font-size: 20px;">This is a red paragraph.</p>
+
+Explanation:
+
+Inline styles are quick and easy but not recommended for large projects.
+You can't reuse inline styles easily.
+They can make your HTML harder to read if overused.
+They override both internal and external styles.
+
+2: Internal Styles
+Definition:
+Internal styles are written within a <style> block in the <head> section of the HTML document. This method is good for small projects where you don't need to reuse styles across multiple pages.
+
+Syntax Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Styles</title>
+  <style>
+    p {
+      color: blue;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <p>This is a blue paragraph.</p>
+</body>
+</html>
+
+Explanation:
+
+The <style> tag goes inside the <head>.
+Styles defined here apply to all matching elements within the same HTML document.
+More efficient than inline styles since you can reuse the same rule on multiple elements.
+
+3: External CSS
+Definition:
+External CSS is when you write your CSS in a separate .css file and link it to your HTML document. This method is ideal for larger projects where you want to maintain and reuse styles across multiple web pages.
+
+Syntax Example (HTML Link):
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>External CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p>This paragraph will be styled by the external CSS file.</p>
+</body>
+</html>
+
+CSS File (styles.css):
+p {
+  color: green;
+  font-size: 16px;
+}
+
+Explanation:
+
+The <link> tag in the <head> section links the external CSS file to the HTML document.
+External CSS files have the .css extension.
+External CSS is reusable across multiple HTML files, making it more efficient for larger websites.
+It keeps the HTML file clean and separates content from design.
+Multiple web pages can share the same styles, making maintenance easier.
+Benefits:
+
+Cleaner HTML structure.
+Easier to maintain and update styles across many pages.
+Reduces duplication of code by reusing styles.
+
+
+Classes in CSS
+Definition:
+Classes are reusable styles that you can apply to multiple HTML elements. A class is defined with a . (dot) followed by the class name in your CSS. You can apply a class to any HTML element by adding the class attribute.
+Syntax Example (Internal):
+<head>
+  <style>
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p class="highlight">This text is highlighted.</p>
+  <p class="highlight">This text is also highlighted.</p>
+</body>
+
+
+IDs in CSS (Just Mention Briefly)
+Definition:
+IDs are unique identifiers for a specific HTML element. They are defined with a # (hash) followed by the ID name.
+
+Syntax Example (Internal)
+<style>
+  #header {
+    background-color: lightgray;
+    padding: 10px;
+  }
+</style>
+
+<header id="header">Welcome to my website!</header>
+
+Explanation:
+
+IDs should be unique to one element on the page.
+They have a higher specificity than classes, meaning they will override class styles if there is a conflict.
+They are usually used for elements that are unique, like navigation bars or headers.
+
+
+https://www.oreilly.com/library/view/learning-web-design/9781449337513/ch04.html#:~:text=Put%20the%20entire%20document%20in,head%3E%20tags%20before%20the%20content.
+
+
+<html lang="en">
+Purpose: This tells the browser what language the website is written in.
+"en" stands for English, so it tells the browser the page's language is English.
+Why it matters: It helps search engines and screen readers (for people with disabilities) understand the language of the page.
+
+2. <meta charset="UTF-8">
+Purpose: This tag sets the character encoding, which is like a system for how text is stored and displayed.
+UTF-8 is the most common encoding and it supports almost all characters, including letters, numbers, and symbols from different languages.
+Why it matters: It ensures that special characters (like accented letters or symbols) display correctly on the webpage.
+
+3. <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Purpose: This tag controls how your webpage looks on different devices, like phones, tablets, and computers.
+"width=device-width" makes the webpage fit the width of the device's screen.
+"initial-scale=1.0" means the webpage will load at normal size (not zoomed in or out).
+Why it matters: It ensures your website looks good and is easy to read on both small and large screens, like smartphones and laptops.
+These tags are important for making sure your website works correctly and looks good on all devices and browsers.
