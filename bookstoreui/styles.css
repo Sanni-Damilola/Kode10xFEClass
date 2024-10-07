@@ -65,6 +65,7 @@ nav:hover {
   font-size: 19px;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 
 .logo_btn:hover {
@@ -74,14 +75,18 @@ nav:hover {
 
 .hero {
   width: 100%;
-  height: 500px;
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgb(239, 250, 251);
+  background-image: url("home-1-slider-1.png");
+  background-position: center;
+  margin-bottom: 100px;
 }
 
 .left_container {
   width: 50%;
-  height: 100%;
-  border: solid black;
-  /* margin-left: 400px; */
+  height: 80%;
   padding-left: 70px;
 }
 
@@ -109,5 +114,98 @@ p {
 }
 
 .btn_wrapper {
-  background-color: red;
+  display: flex;
+  align-items: center;
+}
+
+.btn_wrapper button:nth-child(1) {
+  padding: 20px 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-transform: capitalize;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 400ms;
+  border: none;
+}
+
+.btn_wrapper button:nth-child(1):hover {
+  background-color: rgb(255, 97, 98);
+}
+
+.btn_wrapper button:nth-child(2) {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 3px solid rgb(243, 67, 68);
+}
+
+.btn_img {
+  height: 14px;
+}
+
+.feature_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature_img_wrapper {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.feature_img_wrapper > img {
+  height: 200px;
+  width: 350px;
+}
+
+.feature_collection {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feature_collection > h3 {
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.feature_collection > p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.feature_collection > button {
+  padding: 20px 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-transform: capitalize;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 400ms;
+  border: none;
+}
+
+.feature_collection button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(243, 67, 68);
 }
