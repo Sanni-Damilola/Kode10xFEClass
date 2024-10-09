@@ -1,0 +1,71 @@
+/* 
+  position: relative; (Used in the parent element)
+  position: absolute; (Used in the Child element)
+  position: fixed; (Used in the child element)
+  position: sticky; (Used in the child element)
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --childCard: blue;
+  --parentCard: orange;
+}
+
+/* position absolute start here */
+.parent1 {
+  width: 60%;
+  height: 600px;
+  background-color: var(--parentCard);
+  position: relative;
+}
+
+.child1 {
+  width: 300px;
+  height: 300px;
+  background-color: var(--childCard);
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  top: 10px;
+}
+
+/* position fixed start here  */
+
+.position_fixed {
+  width: 300px;
+  height: 300px;
+  background-color: var(--childCard);
+  position: fixed;
+  right: 0;
+  top: 200px;
+}
+
+.parent2 {
+  margin-top: 100px;
+  width: 100%;
+  position: sticky;
+  top: 200px;
+}
+
+.position_sticky {
+  width: 300px;
+  height: 300px;
+  background-color: var(--childCard);
+}
+
+footer {
+  background-color: gray;
+  height: 600px;
+  width: 100%;
+}
