@@ -68,6 +68,7 @@ let num = 1000
 console.log(num)
 console.log(num.toString())
 num = num.toString()
+
 num = true
 num = undefined
 num = "hi"
@@ -91,3 +92,27 @@ footBallTeam = "Man u"
 const myAge = 40
 // const favMusic = "Way Up" // Error
 // myAge = 30 // Error
+
+// last index of
+const getLastIndex = "h h h"
+console.log(getLastIndex.lastIndexOf("h"))
+
+// concat
+const myFriendName = "jadorita "
+const greetFriend = "Hello, How are You?"
+const greetFriendName = myFriendName.concat(
+  greetFriend,
+  "Are You Prepared For today's exam"
+)
+console.log(greetFriendName)
+
+// start with
+const checkStartWith = "123456"
+console.log(checkStartWith.startsWith(""))
+
+const doThis = "yo! " + myFriendName + greetFriend
+console.log(doThis)
+
+
+
+// console.log(getSpace.split(" ").length - 1)
