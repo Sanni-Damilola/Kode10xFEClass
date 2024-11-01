@@ -1,0 +1,20 @@
+/* default style for lager screen */
+.container {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Mobile Screen width 425px or less */
+@media screen and (max-width: 425px) {
+  .container {
+    background-color: lightgreen;
+  }
+}
+
+/* Mobile Screen size 320px or less */
+@media screen and (max-width: 375px) {
+  .container {
+    background-color: lightcoral;
+  }
+}

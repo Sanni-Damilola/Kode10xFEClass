@@ -1,0 +1,17 @@
+.highlight::before {
+  content: "🚨";
+}
+
+.highlight::after {
+  content: " 🚗";
+}
+
+p::first-letter {
+  color: red;
+}
+
+
+p {
+  font-size: 18px;
+  text-align: center;
+}
