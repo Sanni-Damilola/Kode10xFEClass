@@ -11,10 +11,11 @@ console.log(Math.ceil(4.9))
 
 // Math.random()
 console.log(Math.random()) // the value change each time you run the code
+console.log(Math.round(Math.random())) // the value change each time you run the code
 
 // Math.max() return the maximum number
-console.log(Math.max(2, 2, 2, 2, 1, 5, 8, 9, 0)) // gives you the largest number
-console.log(Math.min(2, 2, 2, 2, 1, 5, 8, 9, 0)) // gives you the smallest number
+console.log(Math.max(2, 2, 2, 2, 1, 0)) // gives you the largest number
+console.log(Math.min(2, 2, 2, 2, 1, 5, 8, 9)) // gives you the smallest number
 
 // Math.floor() always round down to the previous whole number
-console.log(Math.floor(4.9))
+console.log(Math.floor(5.7))
