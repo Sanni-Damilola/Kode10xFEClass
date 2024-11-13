@@ -1,5 +1,5 @@
 function sayHello() {
-  // console.log("hello")
+  console.log("hello")
 }
 sayHello()
 
@@ -12,9 +12,9 @@ greet("Chinedu")
 greet("Tinubu")
 greet("Damilola")
 
-// Return KeyWord
 function sayHi(a, b) {
   return a + b
+  // Return KeyWord
 }
 
 console.log(sayHi("Hi", "Hello"))
@@ -61,3 +61,6 @@ const mutiply1 = (a, b, c) => {
 }
 
 console.log(mutiply1(2, 1, 3))
+
+// assignment:
+// search for the name of this type of funtion `function sayHi(){}`

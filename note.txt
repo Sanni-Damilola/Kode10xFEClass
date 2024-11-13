@@ -1,0 +1,85 @@
+/*
+Function
+"Functions are like recipes in coding. They are reusable blocks of code that we write once and can use over and over again. Instead of writing the same code multiple times, we can just call a function."
+*/
+
+
+// A simple function to say Hello
+function sayHello() {
+  console.log("Hello!")
+}
+
+// Calling the function
+sayHello()
+
+// "A function usually starts with the word function, followed by its name, parentheses (), and then curly braces {} where we put the code it should run."
+
+// Parameters
+// "Parameters are placeholders we use in a function to accept values, like empty containers that get filled when we call the function."
+
+function greet(name) {
+  console.log("Hello, " + name + "!")
+}
+greet()
+
+
+greet("Alice") // Output: Hello, Alice!
+greet("Bob") // Output: Hello, Bob!
+
+// Arguments
+// "Arguments are the actual values we give to a function when we call it. They ‘fill in’ the parameters in a function."
+greet("Alice") // "Alice" is an argument here
+
+
+
+// Return KeyWord
+// The return keyword in a function is used to send a value back to the part of the code where the function was called. When a function has a return statement, it stops executing after that line and gives back the result to the caller."
+function add(a, b) {
+  return a + b
+}
+
+let sum = add(3, 4) // sum now holds the value 7
+console.log(sum) // Output: 7
+// Explanation:
+// In this example, return a + b; sends back the result of a + b. So when we call add(3, 4), it returns 7, which we then store in the sum variable.
+
+// In summary:
+// Parameters are placeholders in the function definition.
+// Arguments are the real values you pass to the function.
+// return sends back a result from the function.
+
+// Function Expressions
+// "In JavaScript, we can also create functions as expressions. Instead of using function, we store the function in a variable."
+
+const sayGoodbye = function () {
+  console.log("Goodbye!")
+}
+
+sayGoodbye() // Output: Goodbye!
+
+// Arrow Functions
+// "Arrow functions are a shorter way to write functions. They’re helpful for simple functions, like a one-line calculation."
+
+const multiply = (a, b) => a * b
+console.log(multiply(5, 3)) // Output: 15
+
+// Examples to Work Through Together:
+// Square a Number:
+function square(num) {
+  return num * num
+}
+
+console.log(square(4)) // Output: 16
+
+// Create a Full Name:
+function fullName(firstName, lastName) {
+  return firstName + " " + lastName
+}
+
+console.log(fullName("John", "Doe")) // Output: John Doe
+
+// Advanced Examples and Practice
+// Check if a Number is Even or Odd:
+function isEven(num) {
+  return num % 2 === 0
+}
