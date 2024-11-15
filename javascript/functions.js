@@ -64,3 +64,32 @@ console.log(mutiply1(2, 1, 3))
 
 // assignment:
 // search for the name of this type of funtion `function sayHi(){}`
+
+function fullName(firtstName, lastName) {
+  return firtstName + " " + lastName
+}
+
+console.log(fullName("Sanni", "Damilola")) // Sanni Damilola
+console.log(fullName("Elon", "Musk")) // Elon Musk
+
+function isEven(number) {
+  return number % 2 === 0
+}
+
+console.log(isEven(4)) // True
+console.log(isEven(5)) // False
+console.log(isEven(12)) // True
+console.log(isEven(13)) // False
+
+function isEvenReturnDescriptiveOutPut(number) {
+  if (number % 2 === 0) {
+    return number + " " + "is an Even Number"
+  } else {
+    return number + " " + "is is an Odd Number"
+  }
+}
+
+console.log(isEvenReturnDescriptiveOutPut(4)) //  (4) is an Even Number
+console.log(isEvenReturnDescriptiveOutPut(5)) // (5) is an ODD Number
+console.log(isEvenReturnDescriptiveOutPut(12)) // (12) is an Even Number
+console.log(isEvenReturnDescriptiveOutPut(13)) // (13) is an Odd Number

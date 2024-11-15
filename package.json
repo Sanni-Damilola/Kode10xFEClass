@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./javascript/operators.js"
+    "start": "nodemon ./javascript/higherOrderArrayMethods.js"
   },
   "keywords": [],
   "author": "",

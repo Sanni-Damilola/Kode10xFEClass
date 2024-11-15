@@ -3,7 +3,6 @@ Function
 "Functions are like recipes in coding. They are reusable blocks of code that we write once and can use over and over again. Instead of writing the same code multiple times, we can just call a function."
 */
 
-
 // A simple function to say Hello
 function sayHello() {
   console.log("Hello!")
