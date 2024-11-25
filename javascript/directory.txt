@@ -1,0 +1,61 @@
+
+Directories and commands like cd and ls are not JavaScript concepts directly—they belong to the command line or terminal. However, they’re often used when working on JavaScript projects (e.g., navigating files, running scripts).
+
+What is a Directory?
+A directory is just another word for a "folder."
+Folders store files, and they can also store other folders (called subdirectories).
+On your computer, you use a file explorer to click and navigate through folders. In the terminal, you type commands to do the same thing.
+
+ls
+Output: Lists all the items in the folder you're currently in.
+
+
+cd (Change Directory)
+
+Moves you into a different folder.
+
+Think of it like "double-clicking" a folder.
+
+cd folder-name
+This takes you into the folder-name folder.
+
+To go back to the folder you were just in:
+
+
+cd ..
+The .. means "go up one level."
+
+
+
+
+
+pwd
+Output: /Users/your-name/projects/my-folder
+
+mkdir (Make Directory)
+
+Creates a new folder.
+
+mkdir new-folder
+This creates a folder called new-folder in your current directory.
+
+
+Create a new project folder
+
+mkdir my-js-project
+cd my-js-project
+
+Check files in the folder:
+ls
+
+Open your project in a code editor (like VS Code):
+
+code .
+The code . command opens the current folder in VS Code (if installed).
+
+
+Why It's Useful
+These commands save time compared to clicking through folders.
+You can automate tasks (like creating multiple files or folders quickly).
+Essential for using tools like Node.js, npm (package manager), and Git.
+

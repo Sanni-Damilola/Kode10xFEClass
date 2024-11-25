@@ -11,7 +11,7 @@ const people = [
 console.log(people[0].name) // "Alice"
 console.log(people[1].age) // 30
 
-// map - Transforming Each Item in an Array (30 minutes)
+// map - Transforming Each Item in an Array 
 // Explanation of map
 // map creates a new array by applying a function to each item in the original array.
 
