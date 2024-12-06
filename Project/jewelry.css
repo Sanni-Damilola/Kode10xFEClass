@@ -1,0 +1,458 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  display: block;
+  /* flex-direction: column; */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(229, 223, 208);
+}
+
+header{
+  background-color: white;
+  color: black;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.logo_holder{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10vh;
+  width: 20%;
+  padding-left: 30px;
+}
+
+.logo{
+  margin-left: 0;
+  font-size: 2em;
+}
+
+
+.nav_holder{
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 10vh;
+  align-items: center;
+}
+
+nav{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  cursor: pointer;
+}
+
+.sign{
+  color: black;
+  width: 20%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+
+.sign_btn{
+  border: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  width: 50%;
+  height: 20px;
+}
+
+
+.sign_btn:hover{
+  background-color: #4c4a4a;
+  color: white;
+  transition-duration: 2s;
+}
+
+.hamburger_menu{
+  width: 20%;
+  margin-left: 10px;
+}
+
+a{
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+.hero_container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.left_container{
+  width: 50%;
+  height: 600px;
+  background-color: goldenrod;
+}
+
+.left_container > h1{
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 40px;
+  color: white;
+}
+
+
+.left_container > p{
+  font-size: 20px;
+  margin-top:20px ;
+  margin-left: 40px;
+  color: white;
+  width: 80%;
+}
+
+
+.right_container{
+  width: 50%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.right_container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection{
+  width: 100%;
+  background-color: 
+  10.rgb(229, 223, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.coll_wrapper{
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.coll_wrapper > h1{
+  margin-top: 10px;
+}
+
+.card1{
+  width: 250px;
+  height: 250px;
+  margin: 80px 20px 20px 10px;
+  flex-direction: column-reverse;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgb(136, 133, 133), 0px 6px 20px rgb(226, 223, 223) ;
+}
+
+.card1 > h3{
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card1 > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  border-radius:  10px 10px 0px 0px;
+  /* border: 1px solid grey; */
+}
+
+
+.product{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pro_wrapper{
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.card2{
+  width: 250px;
+  height: 250px;
+  background-color: rgb(241, 241, 241);
+  margin: 80px 20px 20px 10px;
+  flex-direction: column-reverse;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgb(136, 133, 133), 0px 6px 20px rgb(226, 223, 223) ;
+}
+
+.card2 > h3{
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card2 > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  border-radius:  10px 10px 0px 0px;
+}
+
+footer{
+  width: 100%;
+  background-color: goldenrod;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.icon_wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.icon_wrapper > h1{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 30%;
+}
+
+.phone{
+  margin-top: 30px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.phone > a{
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.media{
+  display: flex;
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.media > img{
+  width: 25px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.text_wrapper{
+  width: 50%;
+  color: white;
+}
+
+.text_wrapper > p{
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.text_wrapper > h3{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+
+
+
+ /* big screen size */
+
+@media (max-width: 8000px) and (min-width: 1024px){
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    width: 100%;
+  }
+  
+  header{
+    width: 100%;
+  }
+
+  .hamburger_menu{
+    display: none;
+  }
+
+  .collection{
+    width: 100%;
+  }
+} 
+
+/* tablet */
+
+@media (max-width: 1023px) and (min-width: 427px){
+  body{
+    width: 100%;
+  }
+
+  header{
+    width: 100%;
+  }
+  
+  .nav_holder{
+    display: none;
+  }
+
+
+  .sign_btn{
+    display: none;
+  }
+
+  .hamburger_menu{
+    width: 17%;
+  }
+
+  
+  .left_container > h1{
+    margin-left: 15px;
+  }
+  
+  .left_container > p{
+    font-size: 15px;
+    margin-left: 15px;
+  }
+
+  .icon_wrapper{
+    width: 50%;
+  }
+
+  .text_wrapper{
+    width: 50%;
+  }
+
+}
+
+
+
+/* phone screen  */
+@media (max-width: 426px){
+  .nav_holder{
+    display: none;
+  }
+
+  .logo_holder{
+    justify-content: flex-start;
+    height: 6vh;
+    width: 150px;
+    padding-left: 10px;
+  }
+
+
+  .sign_btn{
+    display: none;
+  }
+
+  .sign{
+    justify-content: flex-end;
+    width: 100px;
+    height: 6vh;
+    padding-right: 10px;
+  }
+
+  .hamburger_menu{
+    width: 20px;
+  }
+
+  .hero_container{
+    display: flex;
+  }
+
+  .left_container{
+    width: 100%;
+    height: 300px;
+  }
+
+  .right_container{
+    width: 100%;
+    height: 300px;
+  }
+
+  .left_container > h1{
+    margin-top: 40px;
+    font-size: 35px;
+    margin-left: 15px;
+  }
+  
+  .left_container > p{
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: 15px;
+  }
+
+  .card1{
+    height: 310px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .card2{
+    height: 310px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+
+  .text_wrapper{
+    width: 100%;
+  }
+
+  .icon_wrapper{
+    width: 100%;
+  }
+
+}
+
+
+

@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_container{
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.left_container{
+  width: 45%;
+  height: 500px;
+  background-color: rgb(76, 74, 74);
+  color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 0 10px 0 10px;
+}
+
+h3{
+  text-align: center;
+  margin-top: 70px;
+  font-size: 30px;
+}
+
+h4{
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+p{
+  text-align: justify;
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+}
+
+.wlc_img{
+  width: 20%;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+
+.Form_holder{
+  width: 56%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 4px 20px rgb(226, 223, 223), 0px 6px 20px rgb(226, 223, 223) ;
+}
+
+.form_h3{
+  font-family: sans-serif;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+input{
+  width: 87%;
+  height: 40px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  padding-left: 10px;
+  border: 1px solid rgb(215, 209, 209);
+}
+
+input:hover{
+  border: 1px solid black;
+}
+
+
+
+.login:hover{
+  cursor: pointer;
+  color: black;
+  background-color: rgb(143, 139, 139);
+  transition-duration: 2s;
+  transition-delay: 10ms;
+}
+
+
+.login{
+  width: 89%;
+  height: 40px;
+  border-radius: 7px;
+  outline: none;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_container{
+  width: 45%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accept{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.accept > input{
+  width: 15px;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+.accept > p{
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 0;
+  text-align: start;
+}
+
+.accept > p > span {
+  color: red;
+}
+
+p{
+  text-align: center;
+}
+
+@media(max-width: 800px) and (min-width: 162px){
+  .left_container{
+    display: none;
+  }
+
+  .main_container{
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .right_container{
+    width: 100%;
+  }
+
+  .Form_holder{
+    width: 87%;
+  }
+  .name_holder{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 89%;
+  }
+
+  .name_holder > input:nth-child(1){
+    width: 45%;
+  }
+  
+  .name_holder > input:nth-child(2){
+    width: 45%;
+  }
+
+  .accept{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  
+  .accept > input{
+    width: 15px;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  
+  .accept > p{
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 0;
+    text-align: start;
+  }
+  
+  p{
+    text-align: center;
+  }
+
+  .sign_btn
+
+  .login{
+    font-size: 13px;
+  }
+}
+
+
+@media(max-width: 2560px) and (min-width: 801px){
+  .left_container{
+    width: 35%;
+  }
+
+  .main_container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80%;
+  }
+  
+  .right_container{
+    width: 40%;
+    justify-content: flex-start;
+  }
+
+  .Form_holder{
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .name_holder{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 89%;
+  }
+
+  .name_holder > input:nth-child(1){
+    width: 45%;
+  }
+  
+  .name_holder > input:nth-child(2){
+    width: 45%;
+  }
+
+  .accept > p{
+    font-size: 12px;
+  }
+
+  .login{
+    font-size: 15px;
+  }
+}
