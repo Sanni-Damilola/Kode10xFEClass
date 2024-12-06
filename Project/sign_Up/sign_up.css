@@ -117,6 +117,13 @@ input:hover{
   align-items: center;
 }
 
+.login > button{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 17px;
+}
+
 .right_container{
   width: 45%;
   height: 500px;

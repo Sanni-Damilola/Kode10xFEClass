@@ -6,9 +6,7 @@
 body{
   width: 100%;
   display: block;
-  /* flex-direction: column; */
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(229, 223, 208);
 }
 
 header{
@@ -19,6 +17,7 @@ header{
   height: 80px;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 }
 
 
@@ -28,11 +27,10 @@ header{
   align-items: center;
   height: 10vh;
   width: 20%;
-  padding-left: 30px;
 }
 
 .logo{
-  margin-left: 0;
+  margin-left: 75px;
   font-size: 2em;
 }
 
@@ -40,7 +38,7 @@ header{
 .nav_holder{
   color: black;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 50%;
   height: 10vh;
   align-items: center;
@@ -48,9 +46,14 @@ header{
 
 nav{
   font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 45px;
+}
+
+nav:hover{
+  color: goldenrod;
 }
 
 .sign{
@@ -60,7 +63,6 @@ nav{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 30px;
 }
 
 
@@ -70,13 +72,14 @@ nav{
   font-size: 15px;
   width: 50%;
   height: 20px;
+  margin-right: 75px;
 }
 
 
 .sign_btn:hover{
-  background-color: #4c4a4a;
+  background-color: goldenrod;
   color: white;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 
 .hamburger_menu{
@@ -123,11 +126,17 @@ a{
 
 
 .left_container > p{
-  font-size: 20px;
-  margin-top:20px ;
+  font-size: 17px;
+  margin-top:5px ;
   margin-left: 40px;
   color: white;
   width: 80%;
+  margin-bottom: 20px;
+}
+
+.shop_now{
+  margin-left: 40px;
+  border: none;
 }
 
 
@@ -148,13 +157,12 @@ a{
 
 .collection{
   width: 100%;
-  background-color: 
-  10.rgb(229, 223, 208);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
+  background-color: rgb(202, 198, 198);
 }
 
 .coll_wrapper{
@@ -168,28 +176,41 @@ a{
   margin-top: 10px;
 }
 
-.card1{
-  width: 250px;
-  height: 250px;
-  margin: 80px 20px 20px 10px;
-  flex-direction: column-reverse;
+.coll_mid{
+  width: 90%;
   display: flex;
-  border-radius: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.card1{
+  width: 220px;
+  height: 250px;
+  background-color: rgb(241, 241, 241);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
   box-shadow: 0px 4px 20px rgb(136, 133, 133), 0px 6px 20px rgb(226, 223, 223) ;
+  flex-direction: column-reverse;
+  border-radius: 7px;
+}
+
+.card1 > img{
+  width: 100%;
+  height: 83%; 
+  border-radius: 7px 7px 0px 0px;
 }
 
 .card1 > h3{
-  margin-bottom: 8px;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.card1 > img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 20px;
-  border-radius:  10px 10px 0px 0px;
-  /* border: 1px solid grey; */
-}
 
 
 .product{
@@ -199,6 +220,7 @@ a{
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  background-color: rgb(202, 198, 198);
 }
 
 .pro_wrapper{
@@ -206,34 +228,75 @@ a{
   height: 60px;
   padding-top: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(202, 198, 198);
+  margin-bottom: 20px;
+}
+
+.pro_nav{ 
+  width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 150px;
+}
+
+.pro_text{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 150px;
+}
+
+.pro_nav > nav{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pro_nav > nav:hover{
+  color: goldenrod;
+}
+
+.wrapper_2{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  text-align: center;
+  height: 270px;
+  width: 230px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgb(196, 193, 193), 0px 6px 20px rgb(226, 223, 223) ;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .card2{
-  width: 250px;
-  height: 250px;
-  background-color: rgb(241, 241, 241);
-  margin: 80px 20px 20px 10px;
-  flex-direction: column-reverse;
+  height: 270px;
+  width: 230px;
+  justify-content: center;
   display: flex;
-  border-radius: 10px;
-  box-shadow: 0px 4px 20px rgb(136, 133, 133), 0px 6px 20px rgb(226, 223, 223) ;
 }
 
-.card2 > h3{
-  margin-bottom: 8px;
-  text-align: center;
+.wrapper_2 > h3{
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .card2 > img {
   width: 100%;
   height: 100%;
-  margin-bottom: 20px;
-  border-radius:  10px 10px 0px 0px;
+  object-fit: cover;
 }
+
 
 footer{
   width: 100%;
-  background-color: goldenrod;
+  background-color: black;
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -248,35 +311,35 @@ footer{
 
 .icon_wrapper > h1{
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 75px;
   width: 30%;
 }
 
 .phone{
-  margin-top: 30px;
+  margin-top: 20px;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 75px;
 }
 
 .phone > a{
   border: none;
   text-decoration: none;
   background-color: transparent;
+  font-size: 15px;
 }
 
 .media{
   display: flex;
   width: 40%;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 75px;
+  margin-top: 25px;
 }
 
 .media > img{
   width: 25px;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-
 
 
 .text_wrapper{
@@ -285,15 +348,17 @@ footer{
 }
 
 .text_wrapper > p{
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 20px;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 
 .text_wrapper > h3{
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 20px;
+  font-size: 15px;
 }
 
 
@@ -332,6 +397,10 @@ footer{
     width: 100%;
   }
 
+  .logo{
+    margin-left: 10px;
+  }
+
   header{
     width: 100%;
   }
@@ -347,6 +416,7 @@ footer{
 
   .hamburger_menu{
     width: 17%;
+    margin-right: 20px;
   }
 
   
@@ -359,6 +429,11 @@ footer{
     margin-left: 15px;
   }
 
+  .shop_now{
+    margin-left: 15px;
+    border: none;
+  }
+
   .icon_wrapper{
     width: 50%;
   }
@@ -367,12 +442,35 @@ footer{
     width: 50%;
   }
 
+  .pro_wrapper{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100px;
+  }
+
+  .pro_text{
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .pro_nav{
+    margin-right: 0;
+    margin-top: 0;
+    height: 50%;
+  }
+
 }
 
 
 
 /* phone screen  */
 @media (max-width: 426px){
+  .logo{
+    margin-left: 10px;
+  }
   .nav_holder{
     display: none;
   }
@@ -406,7 +504,7 @@ footer{
 
   .left_container{
     width: 100%;
-    height: 300px;
+    height: 380px;
   }
 
   .right_container{
@@ -415,7 +513,7 @@ footer{
   }
 
   .left_container > h1{
-    margin-top: 40px;
+    margin-top: 100px;
     font-size: 35px;
     margin-left: 15px;
   }
@@ -426,18 +524,59 @@ footer{
     margin-left: 15px;
   }
 
+  .shop_now{
+    margin-left: 15px;
+  }
+
   .card1{
-    height: 310px;
+    height: 240px;
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
   }
+
 
   .card2{
     height: 310px;
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
+  } 
+
+  .product{
+    justify-content: center;
+  }
+
+  .wrapper_2{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .pro_wrapper > h1{
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .pro_wrapper{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    background-color: red;
+    height: 100px;
+  }
+
+  .pro_nav{
+    margin-bottom: 30px;
+    /* background-color: green; */
+    height: 40%;
+    justify-self: center;
+    margin-right: 0px;
+    align-items: center;
+  }
+
+  .pro_nav > nav{
+    font-size: 12px;
   }
 
   footer{
@@ -451,6 +590,26 @@ footer{
   .icon_wrapper{
     width: 100%;
   }
+
+  .icon_wrapper > h1{
+    margin-left: 20px;
+  }
+
+  .phone{
+    margin-left: 20px;
+  }
+
+  .media{
+    margin-left: 20px;
+  }
+
+  .pro_text{
+    /* background-color: blue; */
+    margin-left: 0;
+    height: 40%;
+  }
+  
+
 
 }
 
