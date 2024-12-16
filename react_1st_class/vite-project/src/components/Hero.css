@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 45%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.left > h1 {
+  margin-top: 100px;
+  text-transform: capitalize;
+  font-size: 50px;
+  width: 70%;
+}
+
+.left > p {
+  margin-top: 40px;
+  width: 80%;
+  font-size: 20px;
+  color: rgb(88, 85, 85);
+}
+
+.herobutton {
+  padding: 15px 30px;
+  width: 200px;
+  font-size: 16px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.globe {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right > img {
+  width: 75%;
+  margin-top: 100px;
+}
+
+.recycle {
+  font-size: 20px;
+  color: rgb(3, 185, 3);
+  margin-left: 10px;
+}
+
+.earth {
+  color: rgb(66, 66, 222);
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+span {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}

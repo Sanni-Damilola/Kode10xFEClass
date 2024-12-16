@@ -1,21 +1,8 @@
 import "./App.css"
-import Booken from "./components/Booken"
-import Resolution from "./components/Resolution"
+import Layout from "./layout/Layout"
 
 function App() {
-  return (
-    <div>
-      <Booken />
-      <Resolution />
-    </div>
-  )
+  return <Layout />
 }
 
 export default App
-
-// Old way
-// function App() {
-//   return "Hello World"
-// }
-
-// console.log(App())
