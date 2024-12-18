@@ -9,5 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "react-icons": "^5.4.0",
+    "vite": "^6.0.3"
+  }
 }
